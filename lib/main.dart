@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app3/core/config/app_congig.dart';
+import 'package:flutter_app3/core/config/app_config.dart';
 import 'package:flutter_app3/core/routes/route_handler.dart';
 
 Future<void> main() async {
-  DependencyInjection.init();
+  await DependencyInjection.init();
   runApp(const MyApp());
 }
 
