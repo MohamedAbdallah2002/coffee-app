@@ -9,7 +9,7 @@ abstract class LocalSourceProduct {
   Future<int> addProduct(ProductModel product);
   Future<int> updateProduct(ProductModel product);
   Future<int> deleteProduct(int id);
-  Future<ProductModel> getProduct(int id);
+  Future<ProductModel?> getProduct(int id);
   Future<List<ProductModel>> getAllProducts();
 }
 
