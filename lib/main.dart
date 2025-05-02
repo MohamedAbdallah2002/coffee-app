@@ -3,6 +3,7 @@ import 'package:flutter_app3/core/config/app_config.dart';
 import 'package:flutter_app3/core/routes/route_handler.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await DependencyInjection.init();
   runApp(const MyApp());
 }
